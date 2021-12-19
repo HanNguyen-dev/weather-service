@@ -39,17 +39,6 @@ public class CurrentWeather {
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class WeatherDescription {
-        public Integer id;
-        public String main;
-        public String description;
-        public String icon;
-    }
-
-    @Data
-    @Builder
-    @AllArgsConstructor
-    @NoArgsConstructor
     public static class Weather {
         public Double temp;
         public Double feels_like;
