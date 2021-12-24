@@ -1,6 +1,6 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11
 WORKDIR  /springboot
 EXPOSE 8080
 COPY . .
 RUN ./gradlew build
-ENTRYPOINT ["java","-jar","build/libs/*.jar"]
+ENTRYPOINT ["/bin/sh", "-c", "java -jar build/libs/*.jar"]
