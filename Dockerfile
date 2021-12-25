@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:11-slim-bullseye
 WORKDIR  /springboot
 EXPOSE 8080
 COPY . .
